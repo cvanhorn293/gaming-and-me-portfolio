@@ -1,0 +1,7 @@
+.supportText {
+    color: var(--text-white);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
