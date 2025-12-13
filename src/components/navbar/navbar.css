@@ -7,7 +7,7 @@ nav {
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 3em;
@@ -71,7 +71,7 @@ nav {
     background: var(--darkest-purple);
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease;
-    z-index: 10;
+    z-index: 99999;
 }
 
 .side-menu-links {

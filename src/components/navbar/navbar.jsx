@@ -30,7 +30,7 @@ export default function Navbar() {
     }, [isOpen]);
 
     return (
-        <div className="navbar" aria-label="Navigation">
+        <div className="navbar z-10 w-100" aria-label="Navigation">
 
             <button className="hamburger" onClick={() => setIsOpen(true)}>
                 &#9776;
