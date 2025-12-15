@@ -1,0 +1,20 @@
+.supportText {
+    color: var(--text-white);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.hero_bg {
+    background: linear-gradient(180deg, #110B2D, transparent);
+    height: 100vh;
+}
+
+.heroTitle {
+    margin-left: 20%;
+    
+    p {
+        line-height: 1.2;
+    }
+}
