@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, Router } from "react";
 import useScreenSize from "../../hooks/windowResize";
 import './navbar.css'
-import logo from '../../assets/images/header_footer/logo.svg'
+import logo from '/gaming-and-me-portfolio/images/headerFooter/logo.svg'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

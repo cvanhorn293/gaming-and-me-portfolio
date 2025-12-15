@@ -86,7 +86,7 @@ const validMargins = ["ml-0", "ml-2", "ml-4", "ml-6", "ml-8", "mr-0", "mr-2", "m
 const LargeTitleImages = () => {
     // Stable shuffle for consistent render
     const shuffled = useMemo(() => shuffle(gameTitleImages), []);
-    const containerStyles = "absolute z-5 w-full flex flex-wrap justify-between items-end mx-auto pt-[180px] opacity-20";
+    const containerStyles = "absolute z-5 w-full flex flex-wrap justify-between items-end mx-auto pt-[180px] opacity-10";
     return (
         <div className={containerStyles}>
             {shuffled.map((img, idx) => {
@@ -97,7 +97,7 @@ const LargeTitleImages = () => {
                 const margin = validMargins[idx % validMargins.length];
                 const width = validWidths[idx % validWidths.length];
                 // Use public path for vite
-                const src = `/gaming-and-me-portfolio/src/assets/images/shared/game-titles/${img}`;
+                const src = `/gaming-and-me-portfolio/images/shared/gameTitles/${img}`;
                 return (
                     <ParallaxImg
                         key={img}
@@ -118,7 +118,7 @@ const SmallTitleImages = () => {
     // Stable shuffle for consistent render, different order
     const shuffled = useMemo(() => shuffle([...gameTitleImages].reverse()), []);
     const smallMargins = ["ml-0", "ml-1", "ml-2", "ml-3", "ml-4", "mr-0", "mr-1", "mr-2", "mr-3", "mr-4"];
-    const containerStyles = "absolute z-4 w-full flex flex-wrap justify-between items-start max-w-7xl mx-auto pt-[40px] opacity-10";
+    const containerStyles = "absolute z-4 w-full flex flex-wrap justify-between items-start max-w-7xl mx-auto pt-[40px] opacity-5";
     return (
         <div className={containerStyles}>
             {shuffled.map((img, idx) => {
@@ -126,7 +126,7 @@ const SmallTitleImages = () => {
                 const end = -100 + idx * 8 * (idx % 2 === 0 ? 1 : -1);
                 const margin = smallMargins[idx % smallMargins.length];
                 const width = "w-1/14";
-                const src = `/gaming-and-me-portfolio/src/assets/images/shared/game-titles/${img}`;
+                const src = `/gaming-and-me-portfolio/images/shared/gameTitles/${img}`;
                 return (
                     <ParallaxImg
                         key={img}
@@ -153,7 +153,7 @@ const ParallaxImg = ({src, alt, start, end, className}) => {
     const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
 
     const y = useTransform(scrollYProgress, [0, 1], [start, end]);
-    const transform = useMotionTemplate`translateY(${y}px) scale(${scale}) rotateX(320deg)`;
+    const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
 
     return (
         <motion.img 
