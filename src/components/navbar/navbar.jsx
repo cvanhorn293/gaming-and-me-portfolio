@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, Router } from "react";
 import useScreenSize from "../../hooks/windowResize";
-import './navbar.css'
-import logo from '/gaming-and-me-portfolio/images/headerFooter/logo.svg'
+import './navbar.css';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
     const screenSize = useScreenSize();
+    const logo = "/gaming-and-me-portfolio/images/headerFooter/logo.svg"
 
     useEffect(() => {
         const handleClickOutside = (event) => {
