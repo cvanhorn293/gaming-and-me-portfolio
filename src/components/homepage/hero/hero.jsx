@@ -97,7 +97,7 @@ const LargeTitleImages = () => {
                 const margin = validMargins[idx % validMargins.length];
                 const width = validWidths[idx % validWidths.length];
                 // Use public path for vite
-                const src = `./src/assets/images/shared/game-titles/${img}`;
+                const src = `/gaming-and-me-portfolio/src/assets/images/shared/game-titles/${img}`;
                 return (
                     <ParallaxImg
                         key={img}
@@ -126,7 +126,7 @@ const SmallTitleImages = () => {
                 const end = -100 + idx * 8 * (idx % 2 === 0 ? 1 : -1);
                 const margin = smallMargins[idx % smallMargins.length];
                 const width = "w-1/14";
-                const src = `./src/assets/images/shared/game-titles/${img}`;
+                const src = `/gaming-and-me-portfolio/src/assets/images/shared/game-titles/${img}`;
                 return (
                     <ParallaxImg
                         key={img}
