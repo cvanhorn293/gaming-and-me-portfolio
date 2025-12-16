@@ -27,7 +27,7 @@
 }
 
 * {
-    padding: 0;
+    /* padding: 0; */
     /* margin: 0; */
     box-sizing: border-box;
 }
@@ -50,6 +50,14 @@ table {
     -webkit-text-fill-color: transparent;
 }
 
+.container {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 h1 {
     font-family: "Sofia Sans Condensed";
     font-size: 8rem;
@@ -59,7 +67,31 @@ h1 {
 }
 
 h2 {
-    color: var(--text-dark);
+    color: var(--Text-White, #CECECE);
+    font-family: "Sofia Sans Condensed";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.0625rem;
+    /* 68.75% */
+}
+
+h3 {
+    color: var(--sky-blue);
+    font-family: "Sofia Sans Condensed";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.625rem;
+}
+
+p {
+    color: #FFF;
+    font-family: "Sofia Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
 }
 
 /* @media (prefers-color-scheme: light) {
