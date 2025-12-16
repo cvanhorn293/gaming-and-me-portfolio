@@ -1,5 +1,11 @@
 /* Nav styling */
 
+.navbar-bg {
+    background: rgba(20, 20, 40, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
 nav {
     position: fixed;
     width: 100%;
