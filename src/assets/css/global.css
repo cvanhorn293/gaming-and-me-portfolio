@@ -42,6 +42,10 @@ table {
 
 /* General styling */
 
+.bg-darkest-blue {
+    background-color: var(--darkest-blue);
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(0deg,
             #661B60 0%,
