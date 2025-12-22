@@ -1,7 +1,7 @@
 [
     {
         "name": "Gnomonkey",
-        "platform": "Twitch",
+        "platforms": ["Twitch", "YouTube"],
         "description": "Variety streamer focusing on RPGs and adventure games.",
         "profileImage": "gnomonkey.jpg",
         "mainGame": "RuneScape",
@@ -14,7 +14,7 @@
     },
     {
         "name": "B0aty",
-        "platform": "Twitch",
+        "platforms": ["Twitch", "YouTube"],
         "channelUrl": "https://www.twitch.tv/b0aty",
         "description": "Variety streamer focusing on RPGs and adventure games.",
         "profileImage": "b0aty.jpg",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Mr_Mammal",
-        "platform": "Twitch",
+        "platforms": ["Twitch", "YouTube"],
         "description": "Variety streamer focusing on RPGs and adventure games.",
         "profileImage": "mr_mammal.jpg",
         "mainGame": "RuneScape",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Framed",
-        "platform": "Twitch",
+        "platforms": ["YouTube"],
         "description": "Variety streamer focusing on RPGs and adventure games.",
         "profileImage": "framed.jpg",
         "mainGame": "RuneScape",
@@ -54,7 +54,7 @@
     },
     {
         "name": "TheBauss",
-        "platform": "Twitch",
+        "platforms": ["Twitch", "YouTube"],
         "description": "Variety streamer focusing on RPGs and adventure games.",
         "profileImage": "thebauss.jpg",
         "mainGame": "League of Legends",
