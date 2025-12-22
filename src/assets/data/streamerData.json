@@ -1,0 +1,42 @@
+[
+    {
+        "streamerName": "Gnomonkey",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/gnomonkey",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "gnomonkey.jpg",
+        "mainGame": "RuneScape"
+    },
+    {
+        "streamerName": "B0aty",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/b0aty",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "b0aty.jpg",
+        "mainGame": "RuneScape"
+    },
+    {
+        "streamerName": "Mr_Mammal",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/mr_mammal",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "mr_mammal.jpg",
+        "mainGame": "RuneScape"
+    },
+    {
+        "streamerName": "Framed",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/framed",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "framed.jpg",
+        "mainGame": "RuneScape"
+    },
+    {
+        "streamerName": "TheBauss",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/thebauss",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "thebauss.jpg",
+        "mainGame": "League of Legends"
+    }
+]

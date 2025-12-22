@@ -18,15 +18,21 @@ nav {
     align-items: center;
     gap: 3em;
     padding: 1.3em 2em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
     position: absolute;
-    left: 50%;
+    left: 35%;
     transform: rotateZ(-15deg);
     width: 120px;
     height: auto;
     font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+        left: 40%;
+    }
 }
 
 .hamburger {

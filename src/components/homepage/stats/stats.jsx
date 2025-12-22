@@ -4,16 +4,13 @@ import { faClock, faGamepad, faUsers, faDollarSign } from '@fortawesome/free-sol
 import './stats.css';
 
 function Stats() {
-    const containerStyles = {
-        backgroundColor: 'var(--darkest-blue)',
-    }
     return (
         <>
-            <div style={containerStyles} className="w-full z-9 relative">
+            <div className="w-full z-9 relative bg-darkest-blue">
                 <motion.div 
                     initial={{ opacity: 0, y: 48 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 2.5, ease: "easeInOut" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="container mx-auto py-30 pb-10 text-center">
                     <h2 className="text-4xl font-bold text-white mb-4 uppercase">What's a gamer without some stats</h2>
                     <p className="mb-12">Every person has their own stats, so here’s what I’ve accumulated over the years.</p>
