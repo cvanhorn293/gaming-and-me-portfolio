@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Gnomonkey",
+        "platform": "Twitch",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "gnomonkey.jpg",
+        "mainGame": "RuneScape",
+        "watchURLs": {
+            "twitch": "https://www.twitch.tv/gnomonkey",
+            "youTube": "https://www.youtube.com/c/Gnomonkey"
+        },
+        "activelyWatching": true,
+        "hoursWatched": 500
+    },
+    {
+        "name": "B0aty",
+        "platform": "Twitch",
+        "channelUrl": "https://www.twitch.tv/b0aty",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "b0aty.jpg",
+        "mainGame": "RuneScape",
+        "watchURLs": {
+            "twitch": "https://www.twitch.tv/b0aty",
+            "youTube": "https://www.youtube.com/c/B0aty"
+        },
+        "activelyWatching": false,
+        "hoursWatched": 80
+    },
+    {
+        "name": "Mr_Mammal",
+        "platform": "Twitch",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "mr_mammal.jpg",
+        "mainGame": "RuneScape",
+        "watchURLs": {
+            "twitch": "https://www.twitch.tv/mr_mammal",
+            "youTube": "https://www.youtube.com/c/MrMammal"
+        },
+        "activelyWatching": true,
+        "hoursWatched": 150
+    },
+    {
+        "name": "Framed",
+        "platform": "Twitch",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "framed.jpg",
+        "mainGame": "RuneScape",
+        "watchURLs": {
+            "twitch": "https://www.twitch.tv/framed",
+            "youTube": "https://www.youtube.com/c/Framed"
+        },
+        "activelyWatching": false,
+        "hoursWatched": 20
+    },
+    {
+        "name": "TheBauss",
+        "platform": "Twitch",
+        "description": "Variety streamer focusing on RPGs and adventure games.",
+        "profileImage": "thebauss.jpg",
+        "mainGame": "League of Legends",
+        "watchURLs": {
+            "twitch": "https://www.twitch.tv/thebauss",
+            "youTube": "https://www.youtube.com/c/TheBauss"
+        },
+        "activelyWatching": true,
+        "hoursWatched": 100
+    }
+]
