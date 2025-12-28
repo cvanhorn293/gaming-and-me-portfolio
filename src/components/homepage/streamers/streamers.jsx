@@ -1,4 +1,3 @@
-import { useState, useEffect} from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { useFetchStats } from '../../../hooks/fetchData.js';
@@ -8,10 +7,9 @@ import './streamers.css';
 
 function Streamers() {
     const { data, loading, error } = useFetchStats('/gaming-and-me-portfolio/assets/data/streamerData.json');
+    
     if (loading) return <section className="stats-container"><p>Loading...</p></section>;
     if (error) return <section className="stats-container"><p>Error: {error}</p></section>;
-
-    
 
     return (
         <div id="streamers" className="w-full h-screen z-9 relative bg-darkest-blue">
