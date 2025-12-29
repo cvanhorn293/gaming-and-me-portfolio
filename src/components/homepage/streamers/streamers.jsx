@@ -12,7 +12,7 @@ function Streamers() {
     if (error) return <section className="stats-container"><p>Error: {error}</p></section>;
 
     return (
-        <div id="streamers" className="w-full h-screen z-9 relative bg-darkest-blue">
+        <div id="streamers" className="w-full z-9 relative bg-darkest-blue">
             <motion.div 
                 initial={{ opacity: 0, y: 48 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ function Streamers() {
                 <h2 className="text-4xl font-bold text-white mb-4 uppercase">Streamers: They entertain me</h2>
                 <p className="mb-12">Streamers help make life just that much more interesting when you’re gaming.  These are just a few that I watch on a constant basis.
 Yes. They are mostly Oldschool Runescape streamers...I know.</p>
-                <div className="w-275 absolute -right-20">
+                <div className="w-full max-w-6xl mx-auto">
                     <StreamerCard streamers={data} />
                 </div>
             </motion.div>
