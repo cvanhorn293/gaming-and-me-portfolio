@@ -1,0 +1,10 @@
+#streamers .slick-current:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s all;
+}
+
+.slick-slide:not(.slick-current) {
+    transform: scale(0.9);
+    opacity: 0.25;
+}

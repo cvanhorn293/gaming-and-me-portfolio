@@ -18,22 +18,25 @@
     --light-blue: #82D9F5;
     --sky-blue: #49AFED;
     --site-pink: #E791CE;
+    --site-pink-10: #181228;
     --dark-purple: #661B60;
     --darkest-purple: #2f002a;
     --darkest-blue: #010415;
 
     /* Global Gradients */
+    --card-gradient: linear-gradient(140deg, var(--darkest-purple), var(--sky-blue))
 
 }
 
 * {
-    padding: 0;
+    /* padding: 0; */
     /* margin: 0; */
     box-sizing: border-box;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 table {
@@ -42,12 +45,35 @@ table {
 
 /* General styling */
 
+.bg-darkest-blue {
+    background-color: var(--darkest-blue);
+}
+
+.bg-light-pink {
+    background-color: var(--site-pink-10);
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(0deg,
             #661B60 0%,
             #706298 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card-background {
+    background: var(--card-gradient);
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.container {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -55,11 +81,65 @@ h1 {
     font-size: 8rem;
     font-style: normal;
     font-weight: 900;
-    line-height: normal;
+    line-height: 7.5rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 7.5rem;
+        line-height: 6rem;
+    }
 }
 
 h2 {
-    color: var(--text-dark);
+    color: var(--Text-White, #CECECE);
+    font-family: "Sofia Sans Condensed";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.0625rem;
+    /* 68.75% */
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+h3 {
+    color: var(--sky-blue);
+    font-family: "Sofia Sans Condensed";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.625rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+h4 {
+    color: var(--text-white);
+    font-family: "Sofia Sans";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+}
+
+p {
+    color: #FFF;
+    font-family: "Sofia Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.desktop-only {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 /* @media (prefers-color-scheme: light) {

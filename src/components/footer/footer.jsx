@@ -6,7 +6,7 @@ function Footer() {
             <footer>
                 <div className="footer-copyright">
                     {/* <img className="footer-logo" src="" alt="University of Nebraska - Official Logo"/> */}
-                    <p className="copyright">© Nebraska Huskers, All rights reserved.</p>
+                    <p className="copyright">© Chris Van Horn, All rights reserved.</p>
                 </div>
                 <div className="selfPromo">
                     <p>Made by</p>

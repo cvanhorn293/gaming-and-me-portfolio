@@ -1,26 +1,38 @@
 /* Nav styling */
 
+.navbar-bg {
+    background: rgba(20, 20, 40, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: ease 0.3s, box-shadow 0.3s;
+}
+
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 999;
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     align-items: center;
     gap: 3em;
     padding: 1.3em 2em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
     position: absolute;
-    left: 50%;
+    left: 35%;
     transform: rotateZ(-15deg);
     width: 120px;
     height: auto;
     font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+        left: 40%;
+    }
 }
 
 .hamburger {
@@ -29,74 +41,69 @@ nav {
     border: none;
     cursor: pointer;
     display: block;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 /* Desktop nav links */
-.nav-links {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .nav-links li {
-    display: inline-block;
-    margin-left: 20px;
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
-    padding: 1em 0;
-    transition: all 0.3s ease-out;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    @media screen and (min-width: 768px) {
+        margin-left: 20px;
+        display: inline-block;
+        padding: 1em 0;
+        transition: all 0.3s ease-out;
+        border: none;
+    }
 }
 
 .nav-links a {
-    color: #fff;
-    margin-left: 1em;
-    font-size: 1.2em;
+    font-family: 'Sofia Sans', sans-serif;
+    color: var(--text-white, #CECECE);
+    margin-left: 0;
+    font-size: 1.8em;
     font-weight: 500;
     text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
+
+    &:hover {
+        background: -webkit-linear-gradient(0deg,
+                    #661B60 0%,
+                    #706298 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-.nav-links li:has(a:hover) {
-    border-bottom: 2px solid #fff;
-    transform: translateY(-3px);
+.socials svg:hover {
+    color: var(--sky-blue);
+    cursor: pointer;
 }
 
 /* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
-    left: -75%;
-    width: 75%;
+    left: -100%;
+    width: 100%;
     height: 100vh;
-    background: var(--darkest-purple);
+    background: var(--darkest-blue);
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease;
     z-index: 99999;
-}
-
-.side-menu-links {
-    list-style: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    padding-top: 1.5em;
-}
-
-.side-menu-links li {
-    padding: 20px;
-    align-items: center;
-}
-
-.side-menu-links li:hover, .side-menu-links li:hover > a {
-    background-color: #fff;
-    color: var(--primary-nebraska-red);
-}
-
-
-.side-menu-links a {
-    color: #fff;
-    margin-left: 1.3em;
-    font-size: 1em;
-    font-weight: 500;
-    text-decoration: none;
+    padding: 0 40px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .side-menu.open {
@@ -105,9 +112,9 @@ nav {
 
 .side-menu-logo {
     transform: rotateZ(-15deg);
-    width: 120px;
+    width: 150px;
     display: block;
-    margin: 4em auto 2.5em;
+    margin: 3em 0 2.5em;
 }
 
 .side-menu-cta {
@@ -120,22 +127,12 @@ nav {
 
 .close-btn {
     position: absolute;
-    right: 0.6em;
+    right: 1.5em;
+    top: 1.6em;
     background: none;
     border: none;
-    font-size: 1.8em;
+    font-size: 1.2em;
     cursor: pointer;
-    margin: 0.3em auto 0.2em 0.3em;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 5;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,19 +157,6 @@ nav {
     .logo {
         position: static;
     }
-    
-    .side-menu {
-        left: -15%;
-        width: 15%;
-    }
-
-    .side-menu-links a {
-        color: #fff;
-        margin-left: 1.3em;
-        font-size: 1.2em;
-        font-weight: 500;
-        text-decoration: none;
-    }
 
 }
 
@@ -184,21 +168,11 @@ nav {
     .nav-links a {
         margin-left: 0;
     }
-
-    .side-menu {
-        left: -50%;
-        width: 50%;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1132px) {
     /* Tablet padding adjustment */
     .navbar {
         padding: 1.3em 2em;
-    }
-    
-    .side-menu {
-        left: -50%;
-        width: 50%;
     }
 }

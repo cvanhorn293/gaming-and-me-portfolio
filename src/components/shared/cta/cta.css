@@ -1,0 +1,57 @@
+.cta-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 16px;
+    padding: 20px 22.65px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 auto 1rem auto;
+        display: none;
+    }
+}
+
+.cta-container {
+    width: 1216px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1280px) {
+        width: 100%;
+    }
+}
+
+.cta-card {
+    max-width: 600px;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        text-align: center;
+        min-height: unset;
+        flex-direction: column;
+    }
+}
+
+.cta-card-button {
+    display: inline-flex;
+    padding: 0.75rem 1.25rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--text-white, #CECECE);
+
+    &:hover {
+        background-color: var(--text-white);
+        color: var(--darkest-blue);
+    }
+}
