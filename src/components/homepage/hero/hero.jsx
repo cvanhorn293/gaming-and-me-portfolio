@@ -7,7 +7,6 @@ import {
   useTransform,
 } from "framer-motion";
 import './hero.css';
-import Navbar from "./../../navbar/navbar.jsx";
 
 function Hero() {
     return (
@@ -18,7 +17,7 @@ function Hero() {
                     lerp: 0.075,
                 }}
             >
-                <Navbar />
+                
                 <LargeTitleImages />
                 <SmallTitleImages />
                 <HeroTitle />

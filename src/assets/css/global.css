@@ -18,11 +18,13 @@
     --light-blue: #82D9F5;
     --sky-blue: #49AFED;
     --site-pink: #E791CE;
+    --site-pink-10: #181228;
     --dark-purple: #661B60;
     --darkest-purple: #2f002a;
     --darkest-blue: #010415;
 
     /* Global Gradients */
+    --card-gradient: linear-gradient(140deg, var(--darkest-purple), var(--sky-blue))
 
 }
 
@@ -32,8 +34,9 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 table {
@@ -46,6 +49,10 @@ table {
     background-color: var(--darkest-blue);
 }
 
+.bg-light-pink {
+    background-color: var(--site-pink-10);
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(0deg,
             #661B60 0%,
@@ -53,6 +60,12 @@ table {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card-background {
+    background: var(--card-gradient);
+    border-radius: 20px;
+    padding: 2px;
 }
 
 .container {
@@ -98,6 +111,11 @@ h3 {
     font-style: normal;
     font-weight: 900;
     line-height: 1.625rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 1.75rem;
+    }
 }
 
 h4 {
@@ -116,6 +134,12 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 1.625rem;
+}
+
+.desktop-only {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 /* @media (prefers-color-scheme: light) {
