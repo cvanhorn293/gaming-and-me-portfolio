@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './cta.css';
 
@@ -22,7 +22,7 @@ import './cta.css';
 // Use icon to use a FontAwesome icon
 // Use iconSrc to use a custom image icon
 
-function CallToActionCard({background=[], borderColor, iconColor, iconBg, icon, iconSrc, title, description, linkName, link}) {
+function CallToActionCard({background=[], borderColor, iconColor, iconBg, icon, iconSrc, title, description, linkName, to}) {
     const iconStyles = {
         backgroundColor: iconBg,
         color: iconColor
@@ -45,7 +45,7 @@ function CallToActionCard({background=[], borderColor, iconColor, iconBg, icon, 
             <div>
                 <h4 className="mb-4">{title}</h4>
                 <p className="mb-6">{description}</p>
-                <Link to={link} className="cta-card-button">{linkName}</Link>
+                <Link to={to} className="cta-card-button">{linkName}</Link>
             </div>
         </div>
     )

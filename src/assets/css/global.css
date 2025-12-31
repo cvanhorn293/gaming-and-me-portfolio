@@ -62,6 +62,13 @@ table {
     -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-2 {
+    background: -webkit-linear-gradient(0deg, #661B60 0%, #82D9F5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .card-background {
     background: var(--card-gradient);
     border-radius: 20px;
@@ -77,6 +84,7 @@ table {
 }
 
 h1 {
+    color: var(--text-white);
     font-family: "Sofia Sans Condensed";
     font-size: 8rem;
     font-style: normal;
