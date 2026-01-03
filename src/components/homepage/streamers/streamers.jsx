@@ -11,7 +11,7 @@ function Streamers() {
     if (loading) return <section className="stats-container"><p>Loading...</p></section>;
     if (error) return <section className="stats-container"><p>Error: {error}</p></section>;
 
-    // Twitch API credentials (not used currently)
+    // IGDB API credentials (not used currently)
     // client_id: 'drtmxof2nnte0w0tah88hvjgt1qmce',
     // client_secret: 'u2iosovonxzokw1qcdsxucoktpy85e',
     // access_token: 77oxmm5mu026sxjnqtaa4laq2bpqs8

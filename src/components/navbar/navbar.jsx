@@ -81,9 +81,9 @@ const NavbarLinks = () => {
         <>
             <ul className="pt-10 md:pt-0 list-none nav-links">
                 <NavbarLink to="/" label="Home" />
-                <NavbarLink to="/gaming-and-me-portfolio/journey" label="Journey" />
+                <NavbarLink to="/journey" label="Journey" />
                 <NavbarLink to="#favorites" label="Favorites" />
-                <NavbarLink to="/gaming-and-me-portfolio/resources" label="Resources" />
+                <NavbarLink to="/resources" label="Resources" />
             </ul>
         </>
     )
@@ -92,7 +92,7 @@ const NavbarLinks = () => {
 const NavbarLink = ({ to, label }) => {
     return (
         <li>
-            <Link to={to} onClick={() => setIsOpen(false)}>{label}</Link>
+            <Link to={`/gaming-and-me-portfolio${to}`} onClick={() => setIsOpen(false)}>{label}</Link>
         </li>
     )
 }

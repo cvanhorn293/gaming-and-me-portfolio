@@ -1,0 +1,16 @@
+.button {
+    background-color: ;
+    color: var(--darkest-blue);
+    font-family: "Sofia Sans Condensed";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem;
+    padding: 0.875rem 1.5rem;
+    border-radius: 20rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}

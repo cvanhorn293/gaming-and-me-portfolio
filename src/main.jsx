@@ -1,22 +1,18 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import Navbar from "./components/navbar/navbar.jsx";
-import Footer from './components/footer/footer.jsx'
-import Hero from './components/homepage/hero/hero.jsx'
-import Stats from './components/homepage/stats/stats.jsx'
-import Streamers from './components/homepage/streamers/streamers.jsx'
-import CTA from './components/homepage/cta.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from "./pages/home.jsx";
+import Journey from "./pages/journey.jsx";
+import Resources from "./pages/resources.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
-            <Navbar />
-            <Hero />
-            <Stats />
-            <Streamers />
-            <CTA />
-            <Footer />
+            <Routes>
+                <Route path="/gaming-and-me-portfolio" element={<Home />} />
+                <Route path="/gaming-and-me-portfolio/journey" element={<Journey />} />
+                <Route path="/gaming-and-me-portfolio/resources" element={<Resources />} />
+            </Routes>
         </BrowserRouter>
     </StrictMode>,
 )
