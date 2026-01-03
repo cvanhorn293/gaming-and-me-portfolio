@@ -38,8 +38,6 @@
     font-family: 'Sofia Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    /* color: var(--text-white, #CECECE);
-    background-color: var(--darkest-blue); */
     color: var(--darkest-blue, #181228);
     background-color: var(--text-white);
     border-radius: 50%;
@@ -50,4 +48,24 @@
     justify-content: center;
     margin-bottom: 1rem;
     z-index: 2;
+}
+
+.timeline-data-mobile {
+    background: #181228;
+    color: var(--darkest-blue, #181228);
+    border-radius: 20px;
+    padding: 40px 12px;
+}
+
+.timeline-data-mobile .timeline-num {
+    color: var(--text-white);
+    background-color: #181228;
+    position: absolute;
+    top: -1.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-data-mobile:not(:last-child) {
+    margin-bottom: 8rem;
 }

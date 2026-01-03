@@ -2,8 +2,6 @@
     position: sticky;
     top: 0.5rem;
     z-index: 20;
-    /* Add a subtle shadow for separation if desired */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .sub-nav-background {
     padding: 1px;

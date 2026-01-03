@@ -45,7 +45,7 @@ function CallToActionCard({background=[], borderColor, iconColor, iconBg, icon, 
             <div>
                 <h4 className="mb-4">{title}</h4>
                 <p className="mb-6">{description}</p>
-                <Link to={to} className="cta-card-button">{linkName}</Link>
+                <Link to={to} className="cta-card-button" target={`${to.startsWith('http') ? '_blank' : '_self'}`}>{linkName}</Link>
             </div>
         </div>
     )

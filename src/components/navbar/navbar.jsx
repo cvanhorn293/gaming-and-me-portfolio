@@ -83,7 +83,7 @@ const NavbarLinks = () => {
                 <NavbarLink to="/" label="Home" />
                 <NavbarLink to="/gaming-and-me-portfolio/journey" label="Journey" />
                 <NavbarLink to="#favorites" label="Favorites" />
-                <NavbarLink to="#contact" label="Resources" />
+                <NavbarLink to="/gaming-and-me-portfolio/resources" label="Resources" />
             </ul>
         </>
     )
