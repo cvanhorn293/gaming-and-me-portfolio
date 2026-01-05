@@ -11,17 +11,9 @@ import './hero.css';
 function Hero() {
     return (
         <div className="w-full min-h-screen hero_bg">
-            <ReactLenis
-                root
-                options={{
-                    lerp: 0.075,
-                }}
-            >
-                
-                <LargeTitleImages />
-                <SmallTitleImages />
-                <HeroTitle />
-            </ReactLenis>
+            <LargeTitleImages />
+            <SmallTitleImages />
+            <HeroTitle />
         </div>
     );
 }

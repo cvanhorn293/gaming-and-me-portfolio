@@ -5,6 +5,7 @@ import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faTwitch, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import useScreenSize from "../../hooks/windowResize";
 import './navbar.css';
+import './../homepage/stats/stats.css';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,15 +22,6 @@ function Navbar() {
             document.body.style.overflow = "";
         }
     }, [isOpen]);
-
-    // Navbar background on scroll
-    useEffect(() => {
-        const onScroll = () => {
-            setScrolled(window.scrollY > 80);
-        };
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
 
     // Set count for something fun later
     const [count, setCount] = useState(0);
@@ -88,10 +80,10 @@ const NavbarLinks = () => {
     return (
         <>
             <ul className="pt-10 md:pt-0 list-none nav-links">
-                <NavbarLink to="#about" label="Home" />
-                <NavbarLink to="#journey" label="Journey" />
+                <NavbarLink to="/" label="Home" />
+                <NavbarLink to="/journey" label="Journey" />
                 <NavbarLink to="#favorites" label="Favorites" />
-                <NavbarLink to="#contact" label="Resources" />
+                <NavbarLink to="/resources" label="Resources" />
             </ul>
         </>
     )
@@ -100,7 +92,7 @@ const NavbarLinks = () => {
 const NavbarLink = ({ to, label }) => {
     return (
         <li>
-            <Link to={to} onClick={() => setIsOpen(false)}>{label}</Link>
+            <Link to={`/gaming-and-me-portfolio${to}`} onClick={() => setIsOpen(false)}>{label}</Link>
         </li>
     )
 }

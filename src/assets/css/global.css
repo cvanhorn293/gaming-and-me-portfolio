@@ -53,10 +53,25 @@ table {
     background-color: var(--site-pink-10);
 }
 
+.text-sky-blue {
+    color: var(--sky-blue);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(0deg,
             #661B60 0%,
             #706298 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+    background: -webkit-linear-gradient(0deg, #661B60 0%, #82D9F5 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,15 +83,37 @@ table {
     padding: 2px;
 }
 
+.button {
+    background-color: var(--site-pink-10);
+    color: var(--text-white);
+    font-family: "Sofia Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    border-radius: 20rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+    &:hover {
+        background-color: var(--text-white);
+        border: var(--sky-blue) solid 2px;
+        color: var(--darkest-blue);
+    }
+}
+
 .container {
     max-width: 1360px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 h1 {
+    color: var(--text-white);
     font-family: "Sofia Sans Condensed";
     font-size: 8rem;
     font-style: normal;
@@ -84,8 +121,8 @@ h1 {
     line-height: 7.5rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 7.5rem;
-        line-height: 6rem;
+        font-size: 6.5rem;
+        line-height: 5.25rem;
     }
 }
 
@@ -95,8 +132,8 @@ h2 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 900;
-    line-height: 2.0625rem;
-    /* 68.75% */
+    line-height: 2.625rem;
+    text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
         font-size: 2.5rem;
@@ -107,13 +144,13 @@ h2 {
 h3 {
     color: var(--sky-blue);
     font-family: "Sofia Sans Condensed";
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 1.625rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         line-height: 1.75rem;
     }
 }
