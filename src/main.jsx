@@ -7,11 +7,11 @@ import Resources from "./pages/resources.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
-                <Route path="/gaming-and-me-portfolio" element={<Home />} />
-                <Route path="/gaming-and-me-portfolio/journey" element={<Journey />} />
-                <Route path="/gaming-and-me-portfolio/resources" element={<Resources />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/journey" element={<Journey />} />
+                <Route path="/resources" element={<Resources />} />
             </Routes>
         </BrowserRouter>
     </StrictMode>,
