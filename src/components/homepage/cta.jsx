@@ -6,7 +6,7 @@ function CallToAction() {
         <div className="cta-container">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-20">
                 <CallToActionCard
-                    to="/gaming-and-me-portfolio/journey"
+                    to="journey"
                     background={["#010415", "#661B60"]}
                     borderColor="#661B60"
                     iconBg="rgba(102, 27, 96, 0.35)"

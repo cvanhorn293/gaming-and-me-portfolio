@@ -9,8 +9,7 @@ const AccordionItem = ({ title, content, isOpen, toggleAccordion }) => {
             >
                 <span className="font-semibold text-lg">{title}</span>
                 <svg
-                    className={`w-6 h-6 transform transition-transform duration-300 ${isOpen ? 'rotate-135' : 'rotate-0'
-                        }`}
+                    className={`w-6 h-6 transform transition-transform duration-300 ${isOpen ? 'rotate-135' : 'rotate-0'}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 16 16"
@@ -32,6 +31,7 @@ const AccordionItem = ({ title, content, isOpen, toggleAccordion }) => {
 
 const Accordion = () => {
     const [openItemId, setOpenItemId] = useState(null);
+    const githubLink = "https://github.com/cvanhorn293/gaming-and-me-portfolio";
 
     const accordionData = [
         {
@@ -57,7 +57,11 @@ const Accordion = () => {
         {
             id: 5,
             title: 'Are there any other socials or resources you can share?',
-            content: 'You can install Tailwind CSS in your React project and use its utility classes in your components.'
+            content: (
+                <span>
+                    Sure. You can find my github and the source code for this project <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-sky-blue underline">here</a>. You're also able to find my LinkedIn <a href="https://www.linkedin.com/in/chris-van-horn-09b355a1/" target="_blank" rel="noopener noreferrer" className="text-sky-blue underline">here</a>.
+                </span>
+            )
         },
     ];
 
