@@ -38,13 +38,13 @@ function Navbar() {
 
     return (
         <nav className={`navbar z-10 w-full ${scrolled ? ' navbar-bg' : ''}`} aria-label="Navigation">
-            
+
             {/* Mobile Hamburger Menu */}
             <FontAwesomeIcon icon={faBars} className="mt-8 ml-4 hamburger" onClick={() => setIsOpen(true)} />
 
             {/* Desktop Navigation */}
-            <a href="#" className="logo mt-10 md:mt-0">            
-                <img src={logo} alt="Personal Logo - It's a comet"/>
+            <a href="#" className="logo mt-10 md:mt-0">
+                <img src={logo} alt="Personal Logo - It's a comet" />
             </a>
             <div className="desktop-only">
                 <NavbarLinks />
@@ -56,7 +56,7 @@ function Navbar() {
             {/* Start Mobile Menu */}
             {isOpen}
             <div ref={menuRef} className={`side-menu ${isOpen ? "open" : ""}`}>
-                <img className="side-menu-logo" src={logo} alt="Personal Logo - It's a comet"/>
+                <img className="side-menu-logo" src={logo} alt="Personal Logo - It's a comet" />
                 <FontAwesomeIcon icon={faXmark} className="close-btn" onClick={() => setIsOpen(false)} />
                 <NavbarLinks />
                 <SocialIcons />
@@ -66,14 +66,14 @@ function Navbar() {
                     <button className="flex flex-row items-center relative card-background max-w-full mt-6" onClick={() => setCount((count) => count + 1)}>
                         <div className="card px-4 py-6 flex flex-row items-center w-full">
                             <div className="game-text w-80 mr-10"><h4>{getGameMessage(count)}</h4></div>
-                            <div style={{backgroundColor: "rgba(73, 175, 237, 0.35)", borderRadius: "10px", padding: "8px 12px", fontSize: "1.5rem"}}>{count}</div>
+                            <div style={{ backgroundColor: "rgba(73, 175, 237, 0.35)", borderRadius: "10px", padding: "8px 12px", fontSize: "1.5rem" }}>{count}</div>
                         </div>
                     </button>
                 </div>
             </div>
             {/* End Mobile Menu */}
         </nav>
-    ) 
+    )
 }
 
 const NavbarLinks = () => {
@@ -92,7 +92,7 @@ const NavbarLinks = () => {
 const NavbarLink = ({ to, label }) => {
     return (
         <li>
-            <Link to={`/gaming-and-me-portfolio${to}`} onClick={() => setIsOpen(false)}>{label}</Link>
+            <Link to={to} onClick={() => setIsOpen(false)}>{label}</Link>
         </li>
     )
 }
