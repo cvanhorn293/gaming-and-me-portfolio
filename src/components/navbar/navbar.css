@@ -76,12 +76,7 @@ nav {
     }
 
     &:hover {
-        background: -webkit-linear-gradient(0deg,
-                    #661B60 0%,
-                    #706298 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--sky-blue);
     }
 }
 

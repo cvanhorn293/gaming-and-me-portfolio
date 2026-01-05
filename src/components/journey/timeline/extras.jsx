@@ -10,9 +10,9 @@ export const TimelineTails = ({ position, className }) => {
     );
 };
 
-export const SubNavigation = ({mobile=false}) => {
+export const SubNavigation = ({ mobile = false }) => {
     return (
-        <div className="sticky-sub-nav mt-10">
+        <div className="hidden md:block mt-10">
             <div className="sub-nav-background sub-nav-bg">
                 <div className="sub-nav-container">
                     <ul className="flex flex-col md:flex-row justify-center items-center md:justify-start space-x-4">

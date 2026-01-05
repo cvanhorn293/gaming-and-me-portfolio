@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ReactLenis } from "lenis/dist/lenis-react";
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from '../components/footer/footer.jsx'
 import JourneyHeader from '../components/journey/header/journeyHeader.jsx'
@@ -13,10 +14,17 @@ export default function Journey() {
 
     return (
         <>
+        <ReactLenis
+            root
+            options={{
+                lerp: 0.075,
+            }}
+        >
             <Navbar />
             <JourneyHeader />
             <Timeline />
             <Footer />
+        </ReactLenis>
         </>
     )
 }

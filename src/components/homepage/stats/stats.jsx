@@ -7,7 +7,7 @@ function Stats() {
     return (
         <>
             <div className="w-full z-9 relative bg-darkest-blue">
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 48 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -18,7 +18,7 @@ function Stats() {
                         <Card icon={faClock} stat="50,000+" label="hours played" />
                         <Card icon={faGamepad} stat="18" label="different platforms" />
                         <Card icon={faUsers} stat="100s" label="of friends made" />
-                        <Card icon={faDollarSign} stat="$10,000+" label="spent on games" />
+                        <Card icon={faDollarSign} stat="$10,000+" label="spent on everything" />
                     </div>
                 </motion.div>
             </div>
@@ -30,8 +30,8 @@ const Card = ({ icon, stat, label }) => {
     return (
         <div className="cardContainer">
             <div className="card px-4 py-10 flex flex-col items-center">
-                <FontAwesomeIcon icon={icon} size="3x" className="mb-4" style={{color: "var(--sky-blue)"}} />
-                <h3 className="my-3">{stat}</h3>
+                <FontAwesomeIcon icon={icon} size="3x" className="mb-4" style={{ color: "var(--sky-blue)" }} />
+                <h2 className="my-3 text-sky-blue">{stat}</h2>
                 <p>{label}</p>
             </div>
         </div>
