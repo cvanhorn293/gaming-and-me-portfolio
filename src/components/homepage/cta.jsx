@@ -17,7 +17,7 @@ function CallToAction() {
                     linkName="View My Journey"
                 />
                 <CallToActionCard
-                    to="#"
+                    to="favorites"
                     background={["rgba(1, 4, 21, 0.50)", "rgba(73, 175, 237, 0.60)"]}
                     borderColor="rgba(130, 217, 245, 0.30)"
                     iconBg="rgba(73, 175, 237, 0.35)"
