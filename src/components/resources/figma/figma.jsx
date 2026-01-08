@@ -14,9 +14,9 @@ function Figma() {
                     <h2 className="uppercase mb-10">CURIOUS TO SEE HOW THE DESIGN CAME TOGETHER?</h2>
                     <h3 className="mb-3">High-fidelity Figma wireframe</h3>
                     <p>View my high fidelity wireframe in Figma that brought this site to life!</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="button bg-light-pink px-10 py-2 my-5 text-center font-bold">View Figma wireframe</a>
+                    <a href="https://www.figma.com/design/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1" target="_blank" rel="noopener noreferrer" className="button bg-light-pink px-10 py-2 my-5 text-center font-bold">View Figma wireframe</a>
                     <p>or</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="button bg-light-pink px-10 py-2 my-5 text-center font-bold">Play with the prototype</a>
+                    <a href="https://www.figma.com/proto/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1" target="_blank" rel="noopener noreferrer" className="button bg-light-pink px-10 py-2 my-5 text-center font-bold">Play with the prototype</a>
                     <h3 className="mt-10 mb-3">Want a PDF version?</h3>
                     <p>Click the link below to generate a PDF iframe on the page to download a PDF version of the Figma wireframe.</p>
                     {!showPDF && (

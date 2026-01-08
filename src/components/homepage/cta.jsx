@@ -6,7 +6,7 @@ function CallToAction() {
         <div className="cta-container">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-20">
                 <CallToActionCard
-                    to="/gaming-and-me-portfolio/journey"
+                    to="journey"
                     background={["#010415", "#661B60"]}
                     borderColor="#661B60"
                     iconBg="rgba(102, 27, 96, 0.35)"
@@ -17,7 +17,7 @@ function CallToAction() {
                     linkName="View My Journey"
                 />
                 <CallToActionCard
-                    to="#"
+                    to="favorites"
                     background={["rgba(1, 4, 21, 0.50)", "rgba(73, 175, 237, 0.60)"]}
                     borderColor="rgba(130, 217, 245, 0.30)"
                     iconBg="rgba(73, 175, 237, 0.35)"
