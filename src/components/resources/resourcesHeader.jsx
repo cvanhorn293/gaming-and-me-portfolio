@@ -1,12 +1,13 @@
 import CallToActionCard from '../shared/cta/callToActionCard.jsx';
 import { faVolleyball, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { PageHeader } from '../shared/extras.jsx';
 
 function ExternalLinks() {
     return (
         <>
-            <div className="flex flex-col items-center pt-60 md:pt-30 text-center">
-                <h1>My <span className="text-gradient-2">Resources</span></h1>
-                <h2 className="pt-30 md:pt-20">Want to see more of my work?</h2>
+            <div className="flex flex-col items-center text-center">
+                <PageHeader title="Resources" />
+                <h2 className="pt-30 md:pt-20 uppercase">Want to see more of my work?</h2>
                 <p className="pt-3">Visit the links below and see what else I’ve done in the past!</p>
             </div>
             <div className="cta-container">

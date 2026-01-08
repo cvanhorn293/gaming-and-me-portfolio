@@ -47,7 +47,7 @@ const Accordion = () => {
         {
             id: 3,
             title: 'Why do you like to create more work for yourself?',
-            content: 'This is a question more specifically for my wife who loves to constantly ask me this question. I wanted to learn something knew since this particular course was something I had a very good understanding about. With that being said, I also wanted to challenge myself to see if I could create something new that used some different things that I could apply later into my work life.'
+            content: 'This is a question more specifically for my wife who loves to constantly ask me this question. I wanted to learn something new since this particular course was something I had a very good understanding about. With that being said, I also wanted to challenge myself to see if I could create something new that used some different things that I could apply later into my work life.'
         },
         {
             id: 4,

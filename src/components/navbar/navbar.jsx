@@ -82,7 +82,7 @@ const NavbarLinks = () => {
             <ul className="pt-10 md:pt-0 list-none nav-links">
                 <NavbarLink to="/" label="Home" />
                 <NavbarLink to="/journey" label="Journey" />
-                <NavbarLink to="#favorites" label="Favorites" />
+                <NavbarLink to="/favorites" label="Favorites" />
                 <NavbarLink to="/resources" label="Resources" />
             </ul>
         </>

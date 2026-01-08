@@ -1,3 +1,11 @@
+// Page Header shared across Journey, Favorites, and Resources pages
+export const PageHeader = ({ title }) => {
+    return (
+        <h1 className="pt-60 md:pt-30 text-center">My <span className="text-gradient-2">{title}</span></h1>
+    )
+}
+
+// Timeline tails component for Journey page
 export const TimelineTails = ({ position, className }) => {
     return (
         <>
@@ -10,6 +18,7 @@ export const TimelineTails = ({ position, className }) => {
     );
 };
 
+// Sub-navigation for Journey page
 export const SubNavigation = () => {
     const scrollToSection = (id) => {
         const getID = document.getElementById(id);

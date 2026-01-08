@@ -1,4 +1,4 @@
-import { TimelineTails } from './extras.jsx';
+import { TimelineTails } from '../../shared/extras.jsx';
 import './timeline.css';
 
 function Timeline() {
@@ -8,7 +8,7 @@ function Timeline() {
             <div className="relative timeline-container">
                 <div className="timeline">
                     <TimelineData
-                        id="childhood" 
+                        id="childhood"
                         orientation="left"
                         src="video-game-consoles.png"
                         num="01"
@@ -18,8 +18,8 @@ function Timeline() {
                         description3="But there came a day...that faithful day that my dad and I played a co-op and I finally beat him. I remember the look on his face, and the pride I felt in that moment. From that day on, I was hooked. Gaming had become apart of me, and more than anything - I wanted to get better."
                     />
                     <TimelineData
-                        id="teenage" 
-                        orientation="right" 
+                        id="teenage"
+                        orientation="right"
                         src="game-collage.png"
                         num="02"
                         title="The Teenage Years"
@@ -27,9 +27,9 @@ function Timeline() {
                         description2="I would spend hours upon hours playing these games with my friends, and it was during this time that I really started to understand the social aspect of gaming. As a kid I was pretty socially awkward and didn't have many friends - but gaming?..I wasn't shy, the only thing I cared about was winning and having fun."
                         description3="Gaming in my teenage years was mostly about socializing and focusing on playing the games I knew I was starting to get good at. Games like Overwatch, Osu!, and World of Warcraft took up the vast majority of my time. I was starting to get competitive in these games, and that's what carried into the years to come."
                     />
-                    <TimelineData 
+                    <TimelineData
                         id="youngadult"
-                        orientation="left" 
+                        orientation="left"
                         src="fortnite-2.png"
                         num="03"
                         title="A New Chapter"
@@ -37,18 +37,18 @@ function Timeline() {
                         description2="Enter: Fortnite. This game took the world by storm, and although I was hesitant at first - one of my friends, Friendly, asked me to give it a try. I wasn't any stranger to playing a bunch of new games with him, we had played dozens of new games by that point and they all were fun, but we always went back to Overwatch...but my good god...we both knew that Fortnite was different."
                         description3="I spent every waking second thinking, dreaming, and playing Fortnite. I spent THOUSANDS of hours playing this game, getting better, meeting a new duo partner (Feinberg), who I actually went on to meet in real life later on for my birthday in 2019. Winning thousands of games, and at one point was trying to get good enough to possibly attend tournaments. I started to stream, and would stream with Fein, seeing if I could possibly get a streaming career going...because man I would LOVE to play video games all day every day and get paid...but alas - that never happened...instead life had other plans."
                     />
-                    <TimelineData 
+                    <TimelineData
                         id="5years"
-                        orientation="right" 
+                        orientation="right"
                         num="04"
                         title="The Recent Past"
                         description="Enter...my (now) wife. Our first date, taco bell and me trying to impress her with my Fortnite skills (I won a solo game on console, despite being a strict PC player). Meeting her didn't really slow down my gaming at all actually. She supported me by watching my streams when we first started dating, and playing games with me when we were together. She knew that I had an absolute addiction to gaming and helped curb that a bit by giving me more things to do lol. But even with that, I still gamed a LOT. By this point, I had moved on from Fortnite (RIP) and was playing a lot of Valorant, Overwatch, and WoW. These games took up the majority of my time, and I was still trying to get better at them competitively."
                         description2="Although one day, my wife called me a 'Salty Gamer' when I played Overwatch...going as far as to say if the ocean wasn't salted before, when I play overwatch it sure as hell would be after. I honestly took that to heart a little bit, and noticed that she was (...happy wife happy life) right. Competitive games were starting to affect my mood and I really wasn't having that much fun anymore."
                         description3="But just as before, I was getting older and life was continuing to move forward. We had my daughter, Norah, and gaming continued...although a bit differently. I started trying to just have fun when I played games, competitive natured or not - I wanted to have fun. Started to play more survival/building games like Valheim / Minecraft / The Finals, etc with friends. But the funny part is, I haven't mentioned the one game that has been a constant in my life since 2001...Old School Runescape."
                     />
-                    <TimelineData 
+                    <TimelineData
                         id="current"
-                        orientation="left" 
+                        orientation="left"
                         num="05"
                         title="Playing to have fun"
                         description="I'm 31 years old. Going to be 32 in July. I've played almost every major game that's ever hit the market...the amount of money I've spent on gaming at this point is probably such a gross number that I don't really wanna think about it. But gaming has and is always a constant in my life."
@@ -60,12 +60,12 @@ function Timeline() {
             <div className="relative spacer h-20">
                 <TimelineTails position="top" className="tail-bottom" />
             </div>
-            
+
         </>
     )
 }
 
-const TimelineData = ({orientation, src, alt, num, id, title, description, description2, description3}) => {
+const TimelineData = ({ orientation, src, alt, num, id, title, description, description2, description3 }) => {
     const img = <img className="w-1/2 md:w-1/3" src={src != null ? `/gaming-and-me-portfolio/images/journey/${src}` : "/gaming-and-me-portfolio/images/journey/Placeholder.png"} alt={alt} />;
     const timelineNum = <div className="timeline-num">{num}</div>;
 
