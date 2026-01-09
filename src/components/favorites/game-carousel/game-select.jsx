@@ -1,6 +1,6 @@
 
-import React, { useCallback, useEffect, useState } from 'react';
-
+import { useEffect, useState } from 'react';
+import Rating from '@mui/material/Rating';
 import GameCarousel from './game-carousel.jsx';
 import ScreenshotCarousel from '../screenshot-display/screenshot-carousel.jsx';
 import './embla-carousel.css';
@@ -62,16 +62,43 @@ function GameSelect() {
                 <GameCarousel games={games} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} screenShotData={screenShotData} />
             </section>
             <section id="game-info" className="w-full mt-20">
-                <div className="container flex flex-row mx-auto py-10 px-10 md:px-0">
-                    <div className="w-1/3">
+                <div className="container flex flex-col md:flex-row mx-auto py-10 px-10 md:px-0">
+                    <div className="w-full lg:w-1/3">
                         <ScreenshotCarousel screenshotData={screenShotData} />
                     </div>
-                    <div className="w-2/3 px-10">
-                        <h2 className="capitalize">{games[selectedIndex]?.name}</h2>
+                    <div className="w-full md:w-2/3 px-0 md:px-10 flex flex-col lg:flex-row md:gap-8">
+                        <div className="w-full lg:w-1/2 my-8 md:my-0">
+                            <h2>{games[selectedIndex]?.name}</h2>
+                            <p className="mt-4">Personal Rating</p>
+                            <p className="border-b border-gray-800 pb-4 mb-6">
+                                <Rating name="half-rating-read" value={games[selectedIndex]?.rating} precision={0.5} readOnly />
+                            </p>
+                            {/* <h3>Description</h3> */}
+                            <p className="mt-4">{games[selectedIndex]?.description}</p>
+                        </div>
+                        <div className="w-full lg:w-1/2 flex flex-row gap-8 my-8 md:my-0 ">
+                            <div className="flex flex-col flex-wrap gap-4">
+                                <Card stat={games[selectedIndex]?.hoursPlayed} subtitle="Hours Played" />
+                                <Card stat={games[selectedIndex]?.hoursStreamed} subtitle="Hours Streamed" />
+                            </div>
+                            <div className="flex flex-col flex-wrap gap-4">
+                                <Card stat={games[selectedIndex]?.yearsPlayed} subtitle="Years Played" />
+                                <Card stat={games[selectedIndex]?.hoursWatched} subtitle="Hours Watched" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </>
+    );
+}
+
+const Card = ({ stat, subtitle }) => {
+    return (
+        <div className="flex flex-col gap-1 mb-4 px-6 py-4 rounded-lg border border-gray-800 text-center">
+            <h3>{stat}</h3>
+            <p>{subtitle}</p>
+        </div>
     );
 }
 
