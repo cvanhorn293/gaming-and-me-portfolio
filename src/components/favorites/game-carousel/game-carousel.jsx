@@ -10,11 +10,15 @@ const GameCarousel = ({ games, selectedIndex, setSelectedIndex, screenShotData }
 
     useEffect(() => {
         if (!emblaApi) return;
+
         setScrollSnaps(emblaApi.scrollSnapList());
         const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+
         emblaApi.on('select', onSelect);
+
         setSelectedIndex(emblaApi.selectedScrollSnap());
         return () => emblaApi && emblaApi.off('select', onSelect);
+
     }, [emblaApi, setSelectedIndex]);
 
     return (

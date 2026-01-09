@@ -12,7 +12,7 @@ export const Thumb = (props) => {
                 src={image}
                 alt="Thumbnail"
                 className="embla__ss-thumbs__slide__img"
-                style={{ width: '100%', height: '100%', borderRadius: '8px' }}
+            // style={{ width: '100%', height: '100%', borderRadius: '8px' }}
             />
         </div>
     );

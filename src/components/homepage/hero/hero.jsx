@@ -1,10 +1,10 @@
 import { useRef, useMemo } from "react";
 import { ReactLenis } from "lenis/dist/lenis-react";
 import {
-  motion,
-  useMotionTemplate,
-  useScroll,
-  useTransform,
+    motion,
+    useMotionTemplate,
+    useScroll,
+    useTransform,
 } from "framer-motion";
 import './hero.css';
 
@@ -21,7 +21,7 @@ function Hero() {
 const HeroTitle = () => {
     return (
         <div className="absolute z-9 top-1/2 -translate-y-1/2 heroTitle text-center md:text-left ">
-            <p className="supportText">hey, i'm chris</p>
+            <p className="supportText">hey, i'm Chris</p>
             <h1 className="uppercase">I <span className="text-gradient">love</span> gaming</h1>
         </div>
     )
@@ -133,7 +133,7 @@ const SmallTitleImages = () => {
     );
 };
 
-const ParallaxImg = ({src, alt, start, end, className}) => {
+const ParallaxImg = ({ src, alt, start, end, className }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -147,10 +147,10 @@ const ParallaxImg = ({src, alt, start, end, className}) => {
     const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
 
     return (
-        <motion.img 
-            src={src} 
+        <motion.img
+            src={src}
             alt={alt}
-            style={{ transform }} 
+            style={{ transform }}
             ref={ref}
             className={className}
         />
