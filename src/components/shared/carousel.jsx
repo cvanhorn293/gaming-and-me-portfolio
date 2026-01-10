@@ -47,7 +47,7 @@ const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src,
 
                                         <p className="text-center">{!name ? null : item[name]}</p>
                                     </div>
-                                    <div className="back p-6 m-4">
+                                    <div className="back p-6 m-auto">
                                         {flipContent && flipContent(item)}
                                     </div>
                                 </div>
