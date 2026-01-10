@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 
-export function useFetchStats(link) {
+export function useFetchData(link) {
     const url = link;
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchStats = async () => {
+        const fetchData = async () => {
             setLoading(true);
             setError(null);
             try {
@@ -25,7 +25,7 @@ export function useFetchStats(link) {
             }
         };
 
-        fetchStats();
+        fetchData();
     }, [url]);
 
     return { data, loading, error };

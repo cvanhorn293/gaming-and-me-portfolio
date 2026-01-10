@@ -1,3 +1,44 @@
+.embla--contained {
+    position: relative;
+    max-width: 420px;
+    margin: 2rem auto;
+    z-index: 1;
+}
+
+.card-flip-wrapper {
+    perspective: 1200px;
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.card-flip-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: relative;
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+
 /* Embla Carousel Styles */
 .embla {
 	position: relative;
@@ -63,6 +104,16 @@
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.embla__slide img,
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
 
 .embla__ss__slide img, .embla__ss-thumbs__slide img {
     width: 100%;
@@ -81,22 +132,26 @@
     cursor: pointer;
 }
 
-.embla__slide__inner {
+.embla__slide__inner, .card-flip-inner {
 	transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 	opacity: 0.2;
 	transform: scale(0.8);
 }
-.embla__slide__inner p {
+
+.embla__slide__inner p, .card-flip-inner p {
     display: none;
 }
-.embla__slide__inner.is-active {
+
+.embla__slide__inner.is-active, .card-flip-inner.is-active {
 	opacity: 1;
 	transform: scale(1.1);
 	z-index: 2;
 }
-.embla__slide__inner.is-active p{
+
+.embla__slide__inner.is-active p, .card-flip-inner.is-active p {
     display: block;
 }
+
 .embla__controls {
 	display: flex;
 	justify-content: center;
@@ -105,13 +160,16 @@
 	gap: 1rem;
 }
 .embla__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	background: #1e293b;
 	color: #fff;
 	border: none;
 	border-radius: 50%;
 	width: 2.5rem;
 	height: 2.5rem;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	cursor: pointer;
 	transition: background 0.2s;
 }
@@ -176,4 +234,39 @@
 
 .embla__ss-thumbs__slide--selected .embla-thumbs__slide__number {
     color: var(--text-body);
+}
+
+/* Flip logic */
+.card-flip-inner {
+    position: 'relative'; 
+    width: '100%';
+    height: '100%'; 
+    transition: 'transform 0.6s';
+}
+
+.embla__slide.is-flipped .front {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.embla__slide.is-flipped .back {
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    transform: rotateY(180deg);
 }

@@ -3,7 +3,7 @@
         "name": "Gnomonkey",
         "platforms": ["Twitch", "YouTube"],
         "description": "Oldschool Runescape streamer known for his advanced PvM capabilities and hot-takes on OSRS subjects.",
-        "profileImage": "gnomonkey.jpg",
+        "profileImage": "/images/homePage/streamers/gnomonkey.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
             "twitch": "https://www.twitch.tv/gnomonkey",
@@ -16,8 +16,8 @@
         "name": "Mmorpg",
         "platforms": ["Twitch", "YouTube"],
         "channelUrl": "https://www.twitch.tv/mmorpg",
-        "description": "Oldschool Runescape streamer known for his farmers content and engaging personality.",
-        "profileImage": "b0aty.jpg",
+        "description": "Oldschool Runescape streamer known for his Farmers content and engaging personality.",
+        "profileImage": "/images/homePage/streamers/mmorpg.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
             "twitch": "https://www.twitch.tv/mmorpg",
@@ -31,7 +31,7 @@
         "platforms": ["Twitch", "YouTube"],
         "channelUrl": "https://www.twitch.tv/b0aty",
         "description": "Oldschool Runescape streamer known for his high-level PvM skills and watching for his next HCIM death.",
-        "profileImage": "b0aty.jpg",
+        "profileImage": "/images/homePage/streamers/b0aty.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
             "twitch": "https://www.twitch.tv/b0aty",
@@ -44,7 +44,7 @@
         "name": "Mr_Mammal",
         "platforms": ["Twitch", "YouTube"],
         "description": "Known as the main editor for farmers content and his oldschool runescape gameplay.",
-        "profileImage": "mr_mammal.jpg",
+        "profileImage": "/images/homePage/streamers/mr_mammal.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
             "twitch": "https://www.twitch.tv/mr_mammal",
@@ -57,7 +57,7 @@
         "name": "Framed",
         "platforms": ["YouTube"],
         "description": "Oldschool Runescape youtuber known for his pking content and ways to challenge himself.",
-        "profileImage": "framed.jpg",
+        "profileImage": "/images/homePage/streamers/framed.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
             "twitch": "https://www.twitch.tv/framed",
@@ -70,24 +70,24 @@
         "name": "Settled",
         "platforms": ["YouTube"],
         "description": "Oldschool Runescape youtuber known Swampletics & Nightmare Mode series. Crazy good UIM player.",
-        "profileImage": "framed.jpg",
+        "profileImage": "/images/homePage/streamers/settled.jpg",
         "mainGame": "RuneScape",
         "watchURLs": {
-            "twitch": "https://www.twitch.tv/framed",
-            "youTube": "https://www.youtube.com/c/Framed"
+            "twitch": "https://www.twitch.tv/Settled",
+            "youTube": "https://www.youtube.com/c/Settled"
         },
         "activelyWatching": false,
         "hoursWatched": 20
     },
     {
-        "name": "TheBauss",
+        "name": "TheBausffs",
         "platforms": ["Twitch", "YouTube"],
         "description": "Silly, sporatic League of Legends streamer who just loves to have fun.",
-        "profileImage": "thebauss.jpg",
+        "profileImage": "/images/homePage/streamers/thebausffs.jpg",
         "mainGame": "League of Legends",
         "watchURLs": {
-            "twitch": "https://www.twitch.tv/thebauss",
-            "youTube": "https://www.youtube.com/c/TheBauss"
+            "twitch": "https://www.twitch.tv/thebausffs",
+            "youTube": "https://www.youtube.com/c/TheBausffs"
         },
         "activelyWatching": true,
         "hoursWatched": 100

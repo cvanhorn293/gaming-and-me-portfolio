@@ -40,6 +40,7 @@ function Timeline() {
                     <TimelineData
                         id="5years"
                         orientation="right"
+                        src="family.png"
                         num="04"
                         title="The Recent Past"
                         description="Enter...my (now) wife. Our first date, taco bell and me trying to impress her with my Fortnite skills (I won a solo game on console, despite being a strict PC player). Meeting her didn't really slow down my gaming at all actually. She supported me by watching my streams when we first started dating, and playing games with me when we were together. She knew that I had an absolute addiction to gaming and helped curb that a bit by giving me more things to do lol. But even with that, I still gamed a LOT. By this point, I had moved on from Fortnite (RIP) and was playing a lot of Valorant, Overwatch, and WoW. These games took up the majority of my time, and I was still trying to get better at them competitively."
@@ -49,10 +50,11 @@ function Timeline() {
                     <TimelineData
                         id="current"
                         orientation="left"
+                        src="old-school-runescape.png"
                         num="05"
                         title="Playing to have fun"
                         description="I'm 31 years old. Going to be 32 in July. I've played almost every major game that's ever hit the market...the amount of money I've spent on gaming at this point is probably such a gross number that I don't really wanna think about it. But gaming has and is always a constant in my life."
-                        description2="In the past couple of years, I've lived by 'play games to have fun.' I have 2 kids (7 ...almost 8, and 5.) and both of them love to play games with me. Mostly Roblox...but they love to play games with me and that makes me one happy guy. But theres one game that I've played since my early childhood, one that I've always come back to playing. Old School Runescape."
+                        description2="In the past couple of years, I've lived by 'play games to have fun. I have 2 kids (8 and 5) and both of them love to play games with me. Mostly Roblox...but they love to play games with me and that makes me one happy guy. But theres one game that I've played since my early childhood, one that I've always come back to playing. Old School Runescape."
                         description3="And that's currently what I've played now consistently for the past...3 years? It's the game that I don't focus on playing competitively, I play it to have fun and have lots of friends that I play it with. I have a Group Ironman (a self-sufficient account with some friends) that I play now, and since I've made it 9 months ago, as of writing this (I just checked) I have 57 days and 8 hours playtime on it. If that goes to show just how much I play this game. It's been a fun journey, gaming has truly and honestly (as cheesy as this sounds) shaped who I am. It's given me friends, experiences, and tons of memories that I can only hope that will continue to grow with my kids as they get older and start gaming with me more (I really hope it's not just Roblox). I love to game, and I always will."
                     />
                 </div>

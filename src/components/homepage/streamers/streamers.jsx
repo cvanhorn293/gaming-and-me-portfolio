@@ -1,89 +1,42 @@
+import { useState } from 'react';
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import { useFetchStats } from '../../../hooks/fetchData.js';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useFetchData } from '../../../hooks/fetchData.js';
+import GameCarousel from '../../shared/carousel.jsx';
+import '../../shared/carousel.jsx'
 import './streamers.css';
 
 function Streamers() {
-    const { data, loading, error } = useFetchStats('/gaming-and-me-portfolio/assets/data/streamer-data.json');
+    const { data, loading, error } = useFetchData('/gaming-and-me-portfolio/assets/data/streamer-data.json');
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
+    console.log('Streamer Data: ', data);
 
     if (loading) return <section className="stats-container"><p>Loading...</p></section>;
     if (error) return <section className="stats-container"><p>Error: {error}</p></section>;
 
-    // IGDB API credentials (not used currently) - Not going to use for complexity sake
-    // client_id: 'drtmxof2nnte0w0tah88hvjgt1qmce',
-    // client_secret: 'u2iosovonxzokw1qcdsxucoktpy85e',
-    // access_token: 77oxmm5mu026sxjnqtaa4laq2bpqs8
-
-    // Rawg.io API Credentials
-    // api_key: '89b03bfb8a4641fb8f35b2b5794e496e'
-    // https://api.rawg.io/api/games/{game}?key=89b03bfb8a4641fb8f35b2b5794e496e
-    // https://api.rawg.io/api/games/{game}/screenshots?page=1&page_size={count - 1}&with_deleted=false&key=89b03bfb8a4641fb8f35b2b5794e496e
-
     return (
-        <div id="streamers" className="w-full z-9 relative bg-darkest-blue">
+        <div id="streamers" className="w-full z-9 relative bg-darkest-blue py-28">
             <motion.div
                 initial={{ opacity: 0, y: 48 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, ease: "easeInOut" }}
             >
-                <div className="container mx-auto py-30 pb-10 text-center md:text-left">
+                <div className="container mx-auto pb-4 px-12 md:px-0 text-center md:text-left">
                     <h2 className="text-4xl font-bold text-white mb-4 uppercase">Streamers: They entertain me</h2>
-                    <p className="mb-12">Streamers help make life just that much more interesting when you’re gaming.  These are just a few that I watch on a constant basis.
+                    <p className="mb-4">Streamers help make life just that much more interesting when you’re gaming.  These are just a few that I watch on a constant basis.
                         Yes. They are mostly Oldschool Runescape streamers...I know.</p>
                 </div>
                 <div className="w-full">
-                    <StreamerCard streamers={data} />
+                    <GameCarousel
+                        data={data}
+                        selectedIndex={selectedIndex}
+                        setSelectedIndex={setSelectedIndex}
+                        src="profileImage"
+                        name="name"
+                        canFlip={true} />
                 </div>
             </motion.div>
         </div>
-    )
-}
-
-const StreamerCard = ({ streamers }) => {
-    const settings = {
-        centerMode: true,
-        centerPadding: "60px",
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                }
-            }
-        ]
-    };
-
-    return (
-        <Slider {...settings}>
-            {streamers && streamers.length > 0 ? (
-                streamers.map((streamer, index) => (
-                    <div key={index}>
-                        <div className="streamer-card h-100 p-4 m-2 bg-gray-800 rounded-lg text-white">
-                            <div>{streamer.name}</div>
-                        </div>
-                    </div>
-                ))
-            ) : (
-                <p>No streamers available.</p>
-            )}
-        </Slider>
     )
 }
 
