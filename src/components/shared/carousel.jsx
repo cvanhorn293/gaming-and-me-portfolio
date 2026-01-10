@@ -4,7 +4,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import useEmblaCarousel from 'embla-carousel-react';
 import './embla-carousel.css';
 
-const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src, name, canFlip = false }) => {
+const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src, name, canFlip = false, buttonText, flipContent }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
     const [scrollSnaps, setScrollSnaps] = useState([]);
     const [flip, setFlip] = useState(false);
@@ -33,20 +33,22 @@ const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src,
                     {data.map((item, idx) => (
                         <div className="embla__slide flex-col" key={item.id}>
                             <div
-                                className={`card-flip-wrapper ${canFlip && idx === selectedIndex && flip ? 'is-flipped' : ''}`}
+                                className={`card-flip-wrapper ${idx === selectedIndex ? `is-active mt-4 mb-4 ${canFlip ? 'cursor-pointer' : ''}` : ''} ${canFlip && idx === selectedIndex && flip ? 'is-flipped' : ''}`}
                                 onClick={() => idx === selectedIndex && setFlip(!flip)}
                             >
-                                <div className={`card-flip-inner ${idx === selectedIndex ? 'is-active' : ''} ${canFlip && idx === selectedIndex && flip ? 'is-flipped' : ''}`}>
-                                    <div className="front p-6 mt-4 mb-4">
+                                <div className={`card-flip-inner ${canFlip && idx === selectedIndex && flip ? 'is-flipped' : ''}`}>
+                                    <div className="front p-6 ">
                                         <img
                                             src={`/gaming-and-me-portfolio${item[src]}`}
                                             alt={item[name]}
-                                            className="mb-4 rounded-lg card-img"
+                                            className={"mb-4 rounded-lg card-img"}
                                         />
+                                        {canFlip && idx === selectedIndex ? <button className="button px-4 py-1 mb-4 flip-button" onClick={() => idx === selectedIndex && setFlip(!flip)}>{buttonText}</button> : ''}
+
                                         <p className="text-center">{!name ? null : item[name]}</p>
                                     </div>
                                     <div className="back p-6 m-4">
-                                        <p>This is just some content to make sure the flip is working</p>
+                                        {flipContent && flipContent(item)}
                                     </div>
                                 </div>
                             </div>

@@ -1,15 +1,18 @@
-.embla--contained {
-    position: relative;
-    max-width: 420px;
-    margin: 2rem auto;
-    z-index: 1;
-}
+
 
 .card-flip-wrapper {
     perspective: 1200px;
     min-height: 400px;
     width: 100%;
     position: relative;
+}
+
+.card-flip-wrapper:not(.is-active) {
+    margin-top: -2rem;
+}
+
+.card-flip-wrapper.is-active {
+    padding: 0.5rem;
 }
 
 .card-flip-inner {
@@ -36,15 +39,17 @@
     max-height: 400px;
     object-fit: cover;
     display: block;
+
+    
 }
 
-
 /* Embla Carousel Styles */
-.embla {
+.embla, .embla--contained {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
 	max-width: 400px;
+    z-index: 1;
 }
 .embla_ss {
     position: relative;
@@ -55,6 +60,7 @@
 .embla__viewport {
 	overflow: visible;
 	width: 100%;
+    margin-bottom: 2.5rem;
 }
 .embla__ss__viewport {
     overflow: hidden;
@@ -113,6 +119,26 @@
     max-height: 400px;
     object-fit: cover;
     display: block;
+
+    anchor-name: --card-image;
+}
+
+.flip-button {
+    position: absolute;
+    position-anchor: --card-image;
+    bottom: calc(anchor(bottom) + 1rem);
+    left: calc(anchor(left) + 18%);
+    cursor: pointer;
+    font-size: 0.875rem;
+    background-color: var(--text-white);
+    color: var(--darkest-blue);
+}
+
+.card-flip-inner.is-flipped img {
+    filter: brightness(0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .embla__ss__slide img, .embla__ss-thumbs__slide img {
@@ -132,23 +158,23 @@
     cursor: pointer;
 }
 
-.embla__slide__inner, .card-flip-inner {
+.embla__slide__inner, .card-flip-wrapper {
 	transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 	opacity: 0.2;
 	transform: scale(0.8);
 }
 
-.embla__slide__inner p, .card-flip-inner p {
+.embla__slide__inner p, .card-flip-wrapper p {
     display: none;
 }
 
-.embla__slide__inner.is-active, .card-flip-inner.is-active {
+.embla__slide__inner.is-active, .card-flip-wrapper.is-active {
 	opacity: 1;
 	transform: scale(1.1);
 	z-index: 2;
 }
 
-.embla__slide__inner.is-active p, .card-flip-inner.is-active p {
+.embla__slide__inner.is-active p, .card-flip-wrapper.is-active p {
     display: block;
 }
 
@@ -263,10 +289,18 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .back {
     transform: rotateY(180deg);
+}
+
+.card-flip-inner.is-flipped .card-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+
+    &:hover {
+        transform: scale(1.25);
+    }
 }

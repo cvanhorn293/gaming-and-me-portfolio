@@ -1,95 +1,175 @@
 [
     {
         "name": "Gnomonkey",
-        "platforms": ["Twitch", "YouTube"],
         "description": "Oldschool Runescape streamer known for his advanced PvM capabilities and hot-takes on OSRS subjects.",
-        "profileImage": "/images/homePage/streamers/gnomonkey.jpg",
+        "cardImage": "/images/homePage/streamers/gnomonkey.png",
+        "profileImage": "/images/homePage/streamers/gnomonkey-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/gnomonkey",
-            "youTube": "https://www.youtube.com/c/Gnomonkey"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/gnomonkey"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@GnomonkeyRS"
+            }
         },
         "activelyWatching": true,
-        "hoursWatched": 500
+        "hoursWatched": 1200
     },
     {
         "name": "Mmorpg",
-        "platforms": ["Twitch", "YouTube"],
         "channelUrl": "https://www.twitch.tv/mmorpg",
         "description": "Oldschool Runescape streamer known for his Farmers content and engaging personality.",
-        "profileImage": "/images/homePage/streamers/mmorpg.jpg",
+        "cardImage": "/images/homePage/streamers/mmorpg.png",
+        "profileImage": "/images/homePage/streamers/mmorpg-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/mmorpg",
-            "youTube": "https://www.youtube.com/c/Mmorpg"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/mmorpg"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@MmorpgRS"
+            }
         },
-        "activelyWatching": false,
-        "hoursWatched": 80
+        "activelyWatching": true,
+        "hoursWatched": 350
     },
     {
         "name": "B0aty",
-        "platforms": ["Twitch", "YouTube"],
         "channelUrl": "https://www.twitch.tv/b0aty",
         "description": "Oldschool Runescape streamer known for his high-level PvM skills and watching for his next HCIM death.",
-        "profileImage": "/images/homePage/streamers/b0aty.jpg",
+        "cardImage": "/images/homePage/streamers/b0aty.png",
+        "profileImage": "/images/homePage/streamers/b0aty-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/b0aty",
-            "youTube": "https://www.youtube.com/c/B0aty"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/b0aty"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@MyNameIsB0aty"
+            }
         },
-        "activelyWatching": false,
-        "hoursWatched": 80
+        "activelyWatching": true,
+        "hoursWatched": 600
     },
     {
         "name": "Mr_Mammal",
-        "platforms": ["Twitch", "YouTube"],
         "description": "Known as the main editor for farmers content and his oldschool runescape gameplay.",
-        "profileImage": "/images/homePage/streamers/mr_mammal.jpg",
+        "cardImage": "/images/homePage/streamers/mr_mammal.png",
+        "profileImage": "/images/homePage/streamers/mr_mammal-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/mr_mammal",
-            "youTube": "https://www.youtube.com/c/MrMammal"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/mr_mammal"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@Mr_Mammal"
+            }
         },
-        "activelyWatching": true,
-        "hoursWatched": 150
+        "activelyWatching": false,
+        "hoursWatched": 200
     },
     {
         "name": "Framed",
-        "platforms": ["YouTube"],
         "description": "Oldschool Runescape youtuber known for his pking content and ways to challenge himself.",
-        "profileImage": "/images/homePage/streamers/framed.jpg",
+        "cardImage": "/images/homePage/streamers/framed.png",
+        "profileImage": "/images/homePage/streamers/framed-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/framed",
-            "youTube": "https://www.youtube.com/c/Framed"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/framed"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@FramedYT"
+            }
         },
         "activelyWatching": false,
         "hoursWatched": 20
     },
     {
         "name": "Settled",
-        "platforms": ["YouTube"],
         "description": "Oldschool Runescape youtuber known Swampletics & Nightmare Mode series. Crazy good UIM player.",
-        "profileImage": "/images/homePage/streamers/settled.jpg",
+        "cardImage": "/images/homePage/streamers/settled.png",
+        "profileImage": "/images/homePage/streamers/settled-profile.png",
         "mainGame": "RuneScape",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/Settled",
-            "youTube": "https://www.youtube.com/c/Settled"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/settled"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@Settledrs"
+            }
         },
         "activelyWatching": false,
-        "hoursWatched": 20
+        "hoursWatched": 100
     },
     {
         "name": "TheBausffs",
-        "platforms": ["Twitch", "YouTube"],
         "description": "Silly, sporatic League of Legends streamer who just loves to have fun.",
-        "profileImage": "/images/homePage/streamers/thebausffs.jpg",
+        "cardImage": "/images/homePage/streamers/thebausffs.png",
+        "profileImage": "/images/homePage/streamers/thebausffs-profile.png",
         "mainGame": "League of Legends",
-        "watchURLs": {
-            "twitch": "https://www.twitch.tv/thebausffs",
-            "youTube": "https://www.youtube.com/c/TheBausffs"
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/thebausffs"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@Thebausffs"
+            }
+        },
+        "activelyWatching": false,
+        "hoursWatched": 250
+    },
+    {
+        "name": "Sardaco",
+        "description": "World of Warcraft streamer of old who has recently picked up Oldschool Runescape. An absolute unit of a gamer.",
+        "cardImage": "/images/homePage/streamers/sardaco.png",
+        "profileImage": "/images/homePage/streamers/sardaco-profile.png",
+        "mainGame": "Oldschool Runescape",
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/sardaco"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@SardacoTV"
+            }
         },
         "activelyWatching": true,
         "hoursWatched": 100
+    },
+    {
+        "name": "Odablock",
+        "description": "Worlds best pker and Oldschool Runescape content creator. Known for his insane PKing skills and entertaining streams.",
+        "cardImage": "/images/homePage/streamers/odablock.png",
+        "profileImage": "/images/homePage/streamers/odablock-profile.png",
+        "mainGame": "Oldschool Runescape",
+        "platforms": {
+            "kick": {
+                "name": "Kick",
+                "watchURL": "https://www.kick.com/odablock"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@Odablock"
+            }
+        },
+        "activelyWatching": true,
+        "hoursWatched": 350
     }
 ]
