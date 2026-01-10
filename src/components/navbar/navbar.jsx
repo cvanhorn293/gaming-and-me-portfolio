@@ -12,7 +12,7 @@ function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const menuRef = useRef(null);
     const screenSize = useScreenSize();
-    const logo = "/gaming-and-me-portfolio/images/headerFooter/logo.svg"
+    const logo = "/gaming-and-me-portfolio/images/header-footer/logo.svg"
 
     // Prevent body scroll when menu is open
     useEffect(() => {

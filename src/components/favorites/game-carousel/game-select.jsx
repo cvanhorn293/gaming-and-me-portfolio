@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import Rating from '@mui/material/Rating';
-import GameCarousel from './game-carousel.jsx';
+import GameCarousel from '../../shared/carousel.jsx';
 import ScreenshotCarousel from '../screenshot-display/screenshot-carousel.jsx';
-import './embla-carousel.css';
+
 
 function GameSelect() {
     const [games, setGames] = useState([]);
@@ -53,13 +53,21 @@ function GameSelect() {
     if (gamesLoading) return <section className="game-select-container"><p>Loading...</p></section>;
     if (gamesError) return <section className="game-select-container"><p>Error: {gamesError}</p></section>;
 
+    console.log('Games: ', games);
+
     return (
 
         <>
             <section className="w-full bg-darkest-blue">
                 <h2 className="uppercase text-white text-center px-10 md:px-0 pt-20 pb-2">Select a game</h2>
                 <p className="text-white text-center px-10 md:px-0 pb-5">Scroll through the games to learn more about why it's a favorite!</p>
-                <GameCarousel games={games} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} screenShotData={screenShotData} />
+                <GameCarousel
+                    data={games}
+                    selectedIndex={selectedIndex}
+                    setSelectedIndex={setSelectedIndex}
+                    screenShotData={screenShotData}
+                    src="imagePath"
+                    name="name" />
             </section>
             <section id="game-info" className="w-full mt-20">
                 <div className="container flex flex-col md:flex-row mx-auto py-10 px-10 md:px-0">
@@ -78,11 +86,11 @@ function GameSelect() {
                         </div>
                         <div className="w-full lg:w-1/2 flex flex-row gap-8 my-8 md:my-0 ">
                             <div className="flex flex-col flex-wrap gap-4">
-                                <Card stat={games[selectedIndex]?.hoursPlayed} subtitle="Hours Played" />
-                                <Card stat={games[selectedIndex]?.hoursStreamed} subtitle="Hours Streamed" />
+                                <Card stat={`${games[selectedIndex]?.hoursPlayed}+`} subtitle="Hours Played" />
+                                <Card stat={`~${games[selectedIndex]?.hoursStreamed}`} subtitle="Hours Streamed" />
                             </div>
                             <div className="flex flex-col flex-wrap gap-4">
-                                <Card stat={games[selectedIndex]?.yearsPlayed} subtitle="Years Played" />
+                                <Card stat={games[selectedIndex]?.yearsPlayed < 1 ? Math.round(games[selectedIndex]?.yearsPlayed * 12) : games[selectedIndex]?.yearsPlayed} subtitle={games[selectedIndex]?.yearsPlayed > 1 ? "Years Played" : games[selectedIndex]?.yearsPlayed <= 1 ? "Month Played" : "Months Played"} />
                                 <Card stat={games[selectedIndex]?.hoursWatched} subtitle="Hours Watched" />
                             </div>
                         </div>

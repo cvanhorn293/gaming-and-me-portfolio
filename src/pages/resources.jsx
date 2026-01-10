@@ -4,7 +4,7 @@ import Navbar from '../components/navbar/navbar.jsx'
 import Footer from '../components/footer/footer.jsx'
 import Header from '../components/resources/resourcesHeader.jsx'
 import Figma from '../components/resources/figma/figma.jsx'
-import Accordion from '../components/shared/accordion.jsx'
+import FAQAccordion from '../components/resources/faq-accordion.jsx'
 
 export default function Resources() {
     // Scroll to top on page load
@@ -23,7 +23,7 @@ export default function Resources() {
                 <Navbar />
                 <Header />
                 <Figma />
-                <Accordion />
+                <FAQAccordion />
                 <Footer />
             </ReactLenis>
         </>

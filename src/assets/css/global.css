@@ -166,10 +166,8 @@ h4 {
 p {
     color: #FFF;
     font-family: "Sofia Sans";
-    font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1.625rem;
+    font-size: 1rem;
 }
 
 .desktop-only {
