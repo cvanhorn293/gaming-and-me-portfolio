@@ -64,7 +64,7 @@ const CardContentBack = ({ content }) => {
                         )}
                         {content.platforms.kick && (
                             <a href={content.platforms.kick.watchURL} target="_blank" rel="noopener noreferrer" className="block text-red-600 mb-2">
-                                <img src="/gaming-and-me-portfolio/public/images/shared/icons/kick-logo.svg" alt="Kick Icon" className="card-icon" />
+                                <img src="/gaming-and-me-portfolio/images/shared/icons/kick-logo.svg" alt="Kick Icon" className="card-icon" />
                             </a>
                         )}
                         {content.platforms.youTube && (
