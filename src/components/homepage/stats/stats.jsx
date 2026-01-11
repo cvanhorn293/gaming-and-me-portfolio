@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faGamepad, faUsers, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import './stats.css';
@@ -7,11 +6,7 @@ function Stats() {
     return (
         <>
             <div className="w-full z-9 relative bg-darkest-blue">
-                <motion.div
-                    initial={{ opacity: 0, y: 48 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
-                    className="container mx-auto py-30 pb-10 text-center">
+                <div className="container mx-auto py-30 pb-10 text-center">
                     <h2 className="text-4xl font-bold text-white mb-4 uppercase">What's a gamer without some stats</h2>
                     <p className="mb-12">Every person has their own stats, so here’s what I’ve accumulated over the years.</p>
                     <div className="flex justify-center gap-8 flex-wrap">
@@ -20,7 +15,7 @@ function Stats() {
                         <Card icon={faUsers} stat="100s" label="of friends made" />
                         <Card icon={faDollarSign} stat="$10,000+" label="spent on everything" />
                     </div>
-                </motion.div>
+                </div>
             </div>
         </>
     )

@@ -61,6 +61,10 @@ table {
     color: var(--text-white);
 }
 
+.border-sky-blue {
+    border-color: var(--sky-blue);
+}
+
 .text-gradient {
     background: -webkit-linear-gradient(0deg,
             #661B60 0%,
