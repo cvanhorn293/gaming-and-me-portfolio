@@ -78,6 +78,25 @@
         "hoursWatched": 200
     },
     {
+        "name": "Odablock",
+        "description": "Worlds best pker and Oldschool Runescape content creator. Known for his insane PKing skills and entertaining streams.",
+        "cardImage": "/images/homePage/streamers/odablock.png",
+        "profileImage": "/images/homePage/streamers/odablock-profile.png",
+        "mainGame": "Oldschool Runescape",
+        "platforms": {
+            "kick": {
+                "name": "Kick",
+                "watchURL": "https://www.kick.com/odablock"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@Odablock"
+            }
+        },
+        "activelyWatching": true,
+        "hoursWatched": 350
+    },
+    {
         "name": "Framed",
         "description": "Oldschool Runescape youtuber known for his pking content and ways to challenge himself.",
         "cardImage": "/images/homePage/streamers/framed.png",
@@ -95,6 +114,25 @@
         },
         "activelyWatching": false,
         "hoursWatched": 20
+    },
+    {
+        "name": "Sardaco",
+        "description": "World of Warcraft streamer of old who has recently picked up Oldschool Runescape. An absolute unit of a gamer.",
+        "cardImage": "/images/homePage/streamers/sardaco.png",
+        "profileImage": "/images/homePage/streamers/sardaco-profile.png",
+        "mainGame": "Oldschool Runescape",
+        "platforms": {
+            "twitch": {
+                "name": "Twitch",
+                "watchURL": "https://www.twitch.tv/sardaco"
+            },
+            "youTube": {
+                "name": "YouTube",
+                "watchURL": "https://www.youtube.com/@SardacoTV"
+            }
+        },
+        "activelyWatching": true,
+        "hoursWatched": 100
     },
     {
         "name": "Settled",
@@ -133,43 +171,5 @@
         },
         "activelyWatching": false,
         "hoursWatched": 250
-    },
-    {
-        "name": "Sardaco",
-        "description": "World of Warcraft streamer of old who has recently picked up Oldschool Runescape. An absolute unit of a gamer.",
-        "cardImage": "/images/homePage/streamers/sardaco.png",
-        "profileImage": "/images/homePage/streamers/sardaco-profile.png",
-        "mainGame": "Oldschool Runescape",
-        "platforms": {
-            "twitch": {
-                "name": "Twitch",
-                "watchURL": "https://www.twitch.tv/sardaco"
-            },
-            "youTube": {
-                "name": "YouTube",
-                "watchURL": "https://www.youtube.com/@SardacoTV"
-            }
-        },
-        "activelyWatching": true,
-        "hoursWatched": 100
-    },
-    {
-        "name": "Odablock",
-        "description": "Worlds best pker and Oldschool Runescape content creator. Known for his insane PKing skills and entertaining streams.",
-        "cardImage": "/images/homePage/streamers/odablock.png",
-        "profileImage": "/images/homePage/streamers/odablock-profile.png",
-        "mainGame": "Oldschool Runescape",
-        "platforms": {
-            "kick": {
-                "name": "Kick",
-                "watchURL": "https://www.kick.com/odablock"
-            },
-            "youTube": {
-                "name": "YouTube",
-                "watchURL": "https://www.youtube.com/@Odablock"
-            }
-        },
-        "activelyWatching": true,
-        "hoursWatched": 350
     }
 ]
