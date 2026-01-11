@@ -9,7 +9,7 @@
 .ticker-content {
     display: inline-block;
     animation: scroll-left linear infinite;
-    animation-duration: 20s;
+    animation-duration: 30s;
 
     &:hover {
         animation-play-state: paused;
