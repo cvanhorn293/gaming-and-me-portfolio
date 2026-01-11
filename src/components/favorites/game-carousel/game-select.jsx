@@ -47,13 +47,10 @@ function GameSelect() {
                 setSSError(err.message);
                 setSSLoading(false);
             });
-        console.log('Selected Game Screenshot Data:', screenShotData);
     }, [games, selectedIndex]);
 
     if (gamesLoading) return <section className="game-select-container"><p>Loading...</p></section>;
     if (gamesError) return <section className="game-select-container"><p>Error: {gamesError}</p></section>;
-
-    console.log('Games: ', games);
 
     return (
 

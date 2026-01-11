@@ -8,7 +8,7 @@ const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src,
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
     const [scrollSnaps, setScrollSnaps] = useState([]);
     const [flip, setFlip] = useState(false);
-
+    const savedGameID = sessionStorage.getItem('selectedGameId');
 
     const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
     const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
@@ -25,6 +25,14 @@ const GameCarousel = ({ data, selectedIndex, setSelectedIndex, renderSlide, src,
         return () => emblaApi && emblaApi.off('select', onSelect);
 
     }, [emblaApi, setSelectedIndex]);
+
+    useEffect(() => {
+        if (!emblaApi || !data || !savedGameID) return;
+        const gameID = data.findIndex(item => String(item.id) === String(savedGameID));
+        if (gameID !== -1) {
+            emblaApi.scrollTo(gameID);
+        }
+    }, [emblaApi, data, savedGameID]);
 
     return (
         <div className="embla embla--contained">
