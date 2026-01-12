@@ -18,10 +18,12 @@ export default function Home() {
             >
                 <Navbar />
                 <Hero />
-                <Stats />
-                <ScrollingTitles />
-                <Streamers />
-                <CTA />
+                <div className="bg-darkest-blue relative z-10">
+                    <Stats />
+                    <ScrollingTitles />
+                    <Streamers />
+                    <CTA />
+                </div>
                 <Footer />
             </ReactLenis>
         </>

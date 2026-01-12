@@ -1,4 +1,5 @@
 import { useFetchData } from '../../../hooks/fetchData.js';
+import Marquee from 'react-fast-marquee';
 import './scrolling-titles.css';
 
 function saveGameId(id) {
@@ -13,18 +14,18 @@ const Ticker = () => {
     if (error) return <section className="stats-container"><p>Error: {error}</p></section>;
 
     return (
-        <div className="ticker-container mt-30 mb-10">
-            <div className="ticker-content">
+        <div className="ticker-wrapper mt-30 mb-10 bg-darkest-blue">
+            <Marquee gradient={false} speed={40} pauseOnHover={true}>
                 {data.map((images, index) => (
-                    <div key={index} className="ticker-item">
-                        <img
-                            src={`/gaming-and-me-portfolio${images.imagePath}`}
-                            alt={`Game title ${index}`}
-                            onClick={() => saveGameId(images.id)}
-                        />
-                    </div>
+                    <img
+                        key={index}
+                        src={`/gaming-and-me-portfolio${images.imagePath}`}
+                        alt={`Game title ${index}`}
+                        onClick={() => saveGameId(images.id)}
+                        style={{ height: 150, borderRadius: 8, margin: "0 20px", cursor: "pointer" }}
+                    />
                 ))}
-            </div>
+            </Marquee>
         </div>
     );
 };
