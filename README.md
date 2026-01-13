@@ -1,5 +1,21 @@
 # MCC Portfolio Project
 
+## [Website URL](https://cvanhorn293.github.io/gaming-and-me-portfolio/#/)
+
+-   This is the portfolio website link. It uses a HashRouter for react to allow it to be on GitHub Pages, which is why the URL looks a little odd.
+
+## [Figma Wireframe](https://www.figma.com/design/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1)
+
+-   Find my Figma Wireframe here. You're able to open up the side menu and explore the different pages and how the entire wireframe was built when I was designing the site out.
+
+## [Figma Prototype](https://www.figma.com/proto/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1)
+
+-   A very simplified version of the site. This includes links for the navigation to the separate pages, and links to sections on other pages.
+
+## [GitHub Kanban Board](https://github.com/users/cvanhorn293/projects/1/views/1)
+
+-   Kanban board of the different tasks throughout the project as I was coding everything out. Helps keep me organized on which tasks I still needed to do, and what I wanted to do.
+
 ## Requirements
 
 Create a low fidelity wireframe for your website.
@@ -57,19 +73,3 @@ Use semantic HTML to organize content
 -   Your website is deployed live on the web.
 
 Your landing page site may be viewed via GitHub Pages
-
-## [Website URL](https://cvanhorn293.github.io/gaming-and-me-portfolio/#/)
-
--   This is the portfolio website link. It uses a HashRouter for react to allow it to be on GitHub Pages, which is why the URL looks a little odd.
-
-## [Figma Wireframe](https://www.figma.com/design/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1)
-
--   Find my Figma Wireframe here. You're able to open up the side menu and explore the different pages and how the entire wireframe was built when I was designing the site out.
-
-## [Figma Prototype](https://www.figma.com/proto/5Z5TaxzfymB82pId16UKdZ/Portfolio-Wireframe---MCC?node-id=4-11&t=AIfA9J86wTBRZQeM-1)
-
--   A very simplified version of the site. This includes links for the navigation to the separate pages, and links to sections on other pages.
-
-## [GitHub Kanban Board](https://github.com/users/cvanhorn293/projects/1/views/1)
-
--   Kanban board of the different tasks throughout the project as I was coding everything out. Helps keep me organized on which tasks I still needed to do, and what I wanted to do.
