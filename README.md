@@ -18,47 +18,47 @@
 
 ## Requirements
 
-Create a low fidelity wireframe for your website.
+### Create a low fidelity wireframe for your website.
 
 -   Wireframe is created for both mobile and desktop
 -   Wireframe will display all elements that are dynamic and have event listeners attached.
 -   Wireframe contains at least 1 comment.
 
-Create user stories to plan and manage your workflow.
+### Create user stories to plan and manage your workflow.
 
 -   Use GitHub Projects Kanban board to manage user stories for your project.
 -   Create 10 – 20 manageable user stories for your project during the development cycle.
 
-Website code includes elements that have event listeners.
+### Website code includes elements that have event listeners.
 
 -   Implement at least five event listeners in your code.
 -   Three of the five event listeners should be unique.
 -   Include a comment above each event listener describing its purpose.
 
-Website uses data.
+### Website uses data.
 
 -   Use at least one internal JSON file to store data for your page.
 -   Include at least 4 data types: string, number, array, object
 
-Website includes at least three artifacts.
+### Website includes at least three artifacts.
 
 -   Link to your LinkedIn Profile
 -   Link to your GitHub repository that includes a comprehensive Readme.
 -   Create a page that loads a PDF of your resume.
 -   Note: If you do not have a current resume, please create a placeholder document for the purpose of this assignment.
 
-Website JavaScript code contains:
+### Website JavaScript code contains:
 
 -   At least two if-statements
 -   At least two loops
 -   One loop must generate HTML elements
 
-Website interacts with APIs:
+### Website interacts with APIs:
 
 -   Fetch internal JSON file with fetch()
 -   Call an external API and display its data on your webpage
 
-Website uses GitHub for version control and deployment:
+### Website uses GitHub for version control and deployment:
 
 -   Use Github to store your repository online.
 -   Manage versions of your code via commits in a repository.
@@ -66,10 +66,10 @@ Website uses GitHub for version control and deployment:
 -   Protect the main branch by using pull requests to merge branches.
 -   Webpage design and development employs accessibility best practices:
 
-Use semantic HTML to organize content
+### Use semantic HTML to organize content
 
 -   All images contain an alt tag
 -   Color scheme meets the minimum acceptable contrast for most text using the 4.5:1 ratio
 -   Your website is deployed live on the web.
 
-Your landing page site may be viewed via GitHub Pages
+### Your landing page site may be viewed via GitHub Pages
